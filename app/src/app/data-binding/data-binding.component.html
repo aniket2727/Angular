@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>Data Binding Example</h1>
+  
+    <!-- Property Binding -->
+    <input [value]="Name" (input)="onInputChange($event)" placeholder="Enter your name">
+    <p>Typed Name: {{ Name }}</p>
+  
+    <!-- Event Binding -->
+    <button (click)="onClick()">Submit</button>
+  
+    <!-- Two-Way Data Binding -->
+    <p>Two-Way Binding:</p>
+    <input [(ngModel)]="Name" placeholder="Enter your name (two-way)">
+  </div>
+  
